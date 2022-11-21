@@ -1,0 +1,89 @@
+			body {
+				font-family: "Fira Sans", sans-serif;
+				background: url(/img/coffema.jpg);
+				background-size: cover;
+				background-position: center;
+				height: 100rem;
+			}
+			.coffee-block {
+				border: 1px solid black;
+				background-color: rgb(32, 202, 199);
+				margin-bottom: 10px;
+				border-radius: 2px;
+			}
+			.coffee-block span {
+				line-height: 70px;
+				vertical-align: middle;
+				font-size: 1.5rem;
+				font-weight: 700;
+				padding-left: 0.5rem;
+			}
+			.coffee-btn {
+				height: 0;
+				width: 0;
+				border-top: 35px solid transparent;
+				border-left: 70px solid rgb(87, 226, 22);
+				border-bottom: 35px solid transparent;
+				cursor: pointer;
+			}
+			.coffee-btn:hover {
+				height: 0;
+				width: 0;
+				border-top: 35px solid transparent;
+				border-left: 70px solid rgb(65, 167, 17);
+				border-bottom: 35px solid transparent;
+			}
+			#display {
+				width: 100%;
+				height: 230px;
+				background-color: rgba(73, 215, 212, 0.65);
+				border: 2px dotted black;
+				color: whitesmoke;
+				padding: 0.6rem;
+				text-align: center;
+			}
+			img[src$="rub.jpg"]:hover {
+				filter: contrast(150%);
+				cursor: pointer;
+			}
+			.animated {
+				animation-name: hide-bill;
+				animation-duration: 0.25s;
+				animation-timing-function: ease;
+			}
+			@keyframes hide-bill {
+				0% {
+					transform: rotate(-90deg) rotateY(1deg);
+					opacity: 1;
+				}
+				100% {
+					transform: rotate(-90deg) rotateY(70deg);
+					opacity: 0;
+				}
+			}
+			.progress-bar {
+				background-color: rgb(87, 226, 22);
+			}
+			.progress {
+				height: 1.5rem;
+			}
+			.bi {
+				font-size: 1.2rem;
+				color: rgb(158, 238, 121);
+			}
+			#changeBox {
+				width: 100%;
+				height: 200px;
+				position: relative;
+				background-color: rgb(98, 95, 95, 0.6);
+				margin-top: 30px;
+				border: 1px solid rgb(121, 120, 120);
+			}
+			img[src$="rub.png"] {
+				width: 65px;
+				position: absolute;
+			}
+			img[src$="rub.png"]:hover {
+				filter: contrast(150%);
+				cursor: pointer;
+			}
